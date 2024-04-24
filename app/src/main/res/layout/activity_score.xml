@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cl_bg"
+    tools:context=".ScoreActivity">
+
+    <ImageView
+        android:id="@+id/congratulationIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="80dp"
+        android:src="@drawable/ic_congratulation" />
+
+    <TextView
+        android:id="@+id/congratulationMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/congratulationIcon"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/congratulation"
+        android:textColor="@color/clText"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/congratulationMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cl_white_text_box"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/correct"
+            android:textColor="@color/clText"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/correctAnswers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/correct"
+            android:textColor="@color/green"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/incorrect"
+            android:textColor="@color/clText"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/incorrectAnswers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/incorrect"
+            android:textColor="@color/red"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/restart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/cl_blue_text_box"
+        android:text="Start New Quiz"
+        android:textColor="@color/clText" />
+
+</RelativeLayout>
